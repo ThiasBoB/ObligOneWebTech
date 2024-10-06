@@ -1,0 +1,269 @@
+/* 
+file: style.css
+author: Thias Songli 
+emial: thiascs@stud.ntnu.no
+Global Styles for the 3 pages
+about: this is the stylesheet for the 3 pages in the oblig 1 in webtech 2024 fall.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* links */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Section */
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    /*display: inline-block;*/
+    /*justify-content: space-between;*/
+    align-items: center;
+    border-bottom: solid#6b7280;
+}
+/*logo */
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: auto;
+    gap: 15px;
+}
+
+nav ul li {
+    
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1e293b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    padding-left: 10%;    
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    
+}
+
+.hero-image .image-placeholder {
+    width: 300px;
+    height: 200px;
+    background-color: #6b7280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Button Style */
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+/* Random Info Section */
+.random-info {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.random-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.info-box {
+    width: 150px;
+    height: 100px;
+    border: 4px solid #2563eb;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.info-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Testimonial Section */
+.testimonial {
+    background-color: #f3f4f6;
+    padding: 40px;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+.testimonial blockquote {
+    font-size: 1.2em;
+}
+
+.testimonial footer {
+    color: black;
+    background-color: #f3f4f6;
+    margin-top: 20px;
+    margin-left: 90%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #2563eb;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+    border-radius: 15px;
+    
+    
+}
+
+.cta p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+}
+.btn-cta {
+    background-color: #2563eb;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 20px;
+    border: solid 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 100px;
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* Posts Section */
+.posts-section {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post {
+    width: 30%;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.loader {
+    display: none;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .post {
+        width: 90%;
+    }
+}
+/* Weather Section */
+.weather-section {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#weather-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.weather-card {
+    width: 30%;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.weather-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.weather-card p {
+    font-size: 1.2em;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .weather-card {
+        width: 90%;
+    }
+}
+

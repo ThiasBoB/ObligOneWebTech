@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts Page</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- Header Section (Same as the home page) -->
+    <header>
+        <div class="logo">Header Logo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="weather.html">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content: Dynamic Posts Section -->
+    <section class="posts-section">
+        <h2>Latest Posts</h2>
+        <div id="posts-container" class="posts-container">
+            <!-- Posts will be dynamically loaded here -->
+        </div>
+        <div id="loader" class="loader">Loading more posts...</div>
+    </section>
+
+    <!-- Footer Section (Same as the first page) -->
+    <footer>
+        <p>Copyright ©</p>
+    </footer>
+
+    <script src="js/postJS.js"></script>
+</body>
+</html>
